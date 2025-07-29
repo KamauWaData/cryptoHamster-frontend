@@ -2,7 +2,7 @@ import axios from 'axios';
 import { refreshToken } from './auth';
 
 // Base URL for your Django API
-const DJANGO_API_URL = import.meta.env.VITE_PUBLIC_API_URL || 'http://127.0.0.1:8000/api/';
+const DJANGO_API_URL = import.meta.env.PUBLIC_API_URL || 'http://127.0.0.1:8000/api/';
 
 // Create an Axios instance for your Django API
 export const apiClient = axios.create({
