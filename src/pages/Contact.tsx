@@ -81,14 +81,6 @@ const Contact = () => {
                 </div>
                 
                 <div className="flex items-start space-x-4">
-                  <Phone className="h-6 w-6 text-trendforge-600 mt-1" />
-                  <div>
-                    <h3 className="font-semibold">Phone</h3>
-                    <p className="text-muted-foreground">+254 112 777 686</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start space-x-4">
                   <MapPin className="h-6 w-6 text-trendforge-600 mt-1" />
                   <div>
                     <h3 className="font-semibold">Office</h3>
