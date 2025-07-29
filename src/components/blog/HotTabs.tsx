@@ -43,17 +43,17 @@ export default function HotTabs() {
         <div
           className={`w-full select-none py-3 text-lg font-medium border-b-2 cursor-pointer text-center rounded-t
             ${activeTab === 'editors'
-              ? 'bg-white border-blue-600 text-blue-700'
-              : 'bg-gray-100 border-transparent text-yellow-700 hover:bg-gray-200'
+              ? 'bg-trendforge-500 text-white border-trendforge-500'
+              : 'bg-gray-100 border-transparent text-blue-700 hover:bg-gray-200'
             }`}
-                    onClick={() => setActiveTab('editors')}
+          onClick={() => setActiveTab('editors')}
         >
           Editor's choice
         </div>
         <div
           className={`w-full select-none py-3 text-lg font-medium border-b-2 cursor-pointer text-center rounded-t
-            ${activeTab === 'editors'
-              ? 'bg-white border-blue-600 text-blue-700'
+            ${activeTab === 'hot'
+              ? 'bg-trendforge-500 text-white border-trendforge-500'
               : 'bg-gray-100 border-transparent text-yellow-700 hover:bg-gray-200'
             }`}
           onClick={() => setActiveTab('hot')}
@@ -74,7 +74,7 @@ export default function HotTabs() {
               className="text-lg text-gray-900 font-normal border-b border-gray-200 cursor-pointer focus:outline-none hover:bg-bg-subtle transition-colors"
             >
               <div className="px-4 lg:px-0 py-4 lg:py-6">
-                <a href={`/article/${article.id}`} className="hover:underline block">
+                <a href={`/article/${article.id}`} className="block transition-transform hover:font-bold hover:scale-105">
                   <div className="font-semibold">{article.title}</div>
                   <div className="text-sm text-gray-600 line-clamp-2">{article.excerpt}</div>
                 </a>
