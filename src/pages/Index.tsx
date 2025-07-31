@@ -95,7 +95,7 @@ const Index = () => {
         {/*class="flex overflow-hidden shadow-default lg:rounded-none rounded-lg lg:shadow-none border lg:border-0 border-border-default" (new css)*/}
 
         <Carousel 
-            className="min-w-[750px] max-w-[800px] border border-border-default rounded-lg overflow-hidden"
+            className="min-w-[730px] max-w-[730px] border border-border-default rounded-lg overflow-hidden"
             plugins={[plugin.current]}
             onMouseEnter={plugin.current.stop}
             onMouseLeave={plugin.current.reset}
